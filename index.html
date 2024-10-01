@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="overflow-x-hidden">
+ 
+    <div class="relative h-screen w-full">
+        <img src="./assets/homeBackground.png" alt="bg" class="object-cover h-full w-full absolute top-0 left-0 z-0">
+        <nav class="h-20 w-full absolute top-0 left-0 z-10 flex justify-between p-7 items-center">
+            <div>
+                <img src="./assets/logo_black-removebg-preview.png" alt="logo" class="h-14">
+            </div>
+            <div class="flex justify-between items-center w-5/12 ">
+                <div class="flex">
+                    <ul class="flex space-x-9 text-gray-200">
+                        <li>Home</li>
+                        <li>Shop</li>
+                        <li>About Us</li>
+                        <li>Help</li>
+                    </ul>
+                </div>
+                <div class="flex justify-center items-center p-2">
+                    <div class="rounded-full w-4 h-4 bg-red-600 text-gray-200 flex justify-center items-center">1</div>
+                    <img src="./assets/cart.png" alt="bag" class="size-8 ml-2">
+                </div>
+            </div>
+        </nav>
+
+       
+        <div class="flex h-full w-full items-center absolute top-0 left-0 z-10">
+            <div class="w-7/12 flex flex-col p-16">
+                <h1 class="text-6xl font-semibold text-gray-200">
+                    <span class="font-normal text-4xl">Welcome to </span><br>
+                    Pop Rock Crystal Shop!
+                </h1>
+                <p class="mt-11 text-slate-700">
+                    Here you will find unique phone accessories, crystals,<br> jewelry and more.
+                    Free shipping inside the U.S. and our<br> phone grips come with a limited warranty. Enjoy!
+                </p>
+                <div class="flex space-x-4 items-center mt-10 w-[34%] justify-between">
+                    <button class="bg-slate-200 font-semibold text-blue-700 rounded-xl w-40 h-[3rem]">SHOP NOW</button>
+                    <div class="text-slate-600">about us</div>
+                </div>
+            </div>
+            <div class="w-5/12 h-full flex justify-center items-center z-20">
+                <div class="w-[28rem] h-[28rem] rounded-[42px] bg-slate-100 flex flex-col justify-center items-center shadow md:shadow-xl">
+                    <img src="./assets/product-removebg-preview.png" alt="product" class="h-[22rem] w-[22rem]">
+                    <div><span class="font-normal text-gray-500">CRYSTAL AGATE PHONE GRIP</span> <span
+                            class="text-blue-600 font-bold">- 18.99$</span></div>
+                </div>
+            </div>
+        </div>
+
+     
+        <img src="./assets/homeBackground2.png" alt="home bg" class="absolute w-full bottom-[-10%] object-cover">
+        <div class="z-40 flex justify-center items-center">
+            <img src="./assets/image.png" alt="scroll" class="absolute w-40 bottom-[15%] right-[15%] object-cover">
+        </div>
+        <div class="z-40 flex justify-center items-center">
+            <img src="./assets/scrollAnimation-removebg-preview.png" alt="scroll" class="absolute w-40 bottom-[1%] object-cover">
+        </div>
+    </div>
+
+    <div class="min-h-screen w-full relative bg-white">
+        <div class="z-40 h-[6rem] w-full flex justify-center items-center">
+            <h1 class="text-5xl font-semibold text-sky-800">All Products</h1>
+        </div>
+
+        
+        <div class="w-3/12 p-7 h-[5rem] absolute z-30 flex items-center justify-between">
+            <div class="text-slate-700">
+                Filter: 
+                <select class="text-blue-700 font-bold">
+                    <option>All products</option>
+                </select>
+            </div>
+            <div class="text-slate-700">
+                Sort: 
+                <select class="text-blue-700 font-bold">
+                    <option>Best Selling</option>
+                </select>
+            </div>
+        </div>
+
+        
+        <div id="card-container" class="container mx-auto px-4 mt-20 py-1 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        </div>
+
+        
+        <div class="flex w-full h-[7rem] justify-center items-center mt-10">
+            <button class="flex justify-center items-center text-blue-600 bg-white border-2 border-blue-500 p-3 m-2 w-[8rem] h-[3rem] rounded-[20px] text-sm">
+                View All
+            </button>
+        </div>
+    </div>
+
+    <div class="relative h-screen w-full">
+        <img src="./assets/homeBackground.png" alt="bg" class="absolute top-[5%] right-0 h-full w-full" >
+        <img src="./assets/WhiteArea.png" alt="white bg" class="absolute top-0 right-0 w-full h-full">
+        <div class=" absolute h-screen w-full flex">
+<div class="w-6/12 h-full flex flex-col items-end justify-center ">
+    <h1 class="text-[2rem] text-sky-800">BEST PRICE</h1>
+    <h1 class="text-[3rem] text-sky-800 font-semibold">Agate Phone Grip</h1>
+    <div class="flex items-center gap-6"><del class="text-[1.3rem] text-sky-500">44.50$</del><h1 class="text-[3rem] text-red-500 font-medium">19.50$</h1></div>
+    <p class="mt-4">These Pop Rock Crystal grip tops can be swapped with<br>other tops depending on your mood, outfit, nails,<br>phone case, holiday, etc.! Just gently squeeze the sides<br> to remove and swap out with another color or design!
+    </p>
+    <button class="mt-8 flex justify-center items-center text-white bg-sky-300 border-blue-500 p-3 m-2 w-[10rem] h-[3rem] rounded-[12px] text-sm font-medium" >BUY NOW<button>
+</div>
+<div class="w-6/12 h-full flex items-center justify-center">
+    <div class="flex justify-center bg-transparent items-center shadow-md h-[45rem] w-[45rem] rounded-full">
+        <div class="flex justify-center items-center bg-slate-100 border shadow-xl h-[35rem] w-[35rem] rounded-full">
+            <div class="flex justify-center items-center bg-white h-[24rem] w-[24rem] rounded-full">
+             <img src="./assets/product-removebg-preview.png" alt="product" class="object-cover h-[20rem]"/>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<div class="h-[18rem] w-full bg-blue-900">
+
+</div>
+   
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
